@@ -1,0 +1,81 @@
+body {
+  background-color: blueviolet;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin-left: 10px;
+}
+
+li {
+  margin-left: -15px;
+}
+
+button {
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan;
+  background-color: cyan;
+}
+
+button:hoover{
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan, 0 0 50px darkgreen,
+  0 0 100px cyan, 0 0 200px cyan;
+}
+
+.band-header {
+  text-align: left;
+  background-color: #1abc9c;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.neon{
+  color: #fff;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #e6127c,
+  0 0 42px #e6127c,
+  0 0 77px #e6127c,
+  0 0 100px #e6127c;
+}
+
+.box{
+  animation: pulse 2s;
+}
+
+@keyframes pulse{
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1,2);
+  }
+}
